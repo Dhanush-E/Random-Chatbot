@@ -12,7 +12,7 @@ import pyjokes
 import randfacts
 
 #importing module for articles
-#imporing modules for vedios
+#imporing modules for videos
 import webbrowser as wb
 
 #import game files
@@ -40,11 +40,11 @@ def send():
 	articles = ['article','read']
 	facts = ['fact']
 	music = ['music','play music']
-	vedios = ['vedio','funny vedio']
+	vedios = ['vdeo','funny video']
 	movies = ['movie']
 
 	if e.get().lower() in greeting:
-		txt.insert(END,"\n"+"Random: Hi I am Random\n\tThis what I can Do\n\t 1.Play games with you\n\t 2.Tell You a Joke\n\t 3.Tell You a random fact\n\t 4.Play music for you\n\t 5.Random Article to read\n\t 6.Play a Funny vedio\n\t 7.Play a movie")
+		txt.insert(END,"\n"+"Random: Hi I am Random\n\tThis what I can Do\n\t 1.Play games with you\n\t 2.Tell You a Joke\n\t 3.Tell You a random fact\n\t 4.Play music for you\n\t 5.Random Article to read\n\t 6.Play a Funny video\n\t 7.Play a movie")
 		speak(" Hi I am Random your chat bot see on screen to know what i can do for you")
 
 	elif e.get().lower() in games:
@@ -93,8 +93,8 @@ def send():
 
 	#vedio
 	elif e.get().lower() in vedios:
-		txt.insert(END,"\n"+"Random: Playing a random Funny vedio for you")
-		speak(' Playing a funny vedio for you')
+		txt.insert(END,"\n"+"Random: Playing a random Funny video for you")
+		speak(' Playing a funny video for you')
 		url = ['https://youtu.be/VNPClMMa418','https://youtu.be/68-g_VczjYA','https://youtu.be/aEsO894eXbQ','https://youtu.be/o8hd_l3S-mo','https://youtu.be/hIpU2TGEt10']
 		random.shuffle(url)
 		wb.open(url[1])
