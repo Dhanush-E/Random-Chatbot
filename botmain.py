@@ -52,9 +52,9 @@ def send():
 		speak(' Opening a random game for you to play')
 		ch = random.randint(1,5)
 		if ch == 1:
-			guessme.main()
+			guessme.main()       
 		elif ch == 2:
-			pass
+			pass                 #games will be added
 		elif ch == 3:
 			pass
 		elif ch == 4:
