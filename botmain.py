@@ -54,7 +54,7 @@ def send():
 		if ch == 1:
 			guessme.main()       
 		elif ch == 2:
-			pass                 #games will be added
+			Numcrick.main()
 		elif ch == 3:
 			pass
 		elif ch == 4:
@@ -82,7 +82,7 @@ def send():
 		speak(' Playing a random song for you')
 		music_dir = 'D:\\songs'
 		songs = os.listdir(music_dir)
-		i = random.randint(1,3)
+		i = random.randint(1,5)
 		os.startfile(os.path.join(music_dir, songs[i]))
 
 	#articles
