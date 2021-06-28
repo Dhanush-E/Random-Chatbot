@@ -17,6 +17,7 @@ import webbrowser as wb
 
 #import game files
 import guessme
+import Numcrick
 
 
 #making chatbot speak
